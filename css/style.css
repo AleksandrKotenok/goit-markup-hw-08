@@ -1,0 +1,189 @@
+
+body{
+   font-family: 'Roboto', 'Tahoma', sans-serif; 
+   color: #000000; 
+}
+/*  HEADER STATRT  */
+/*  LOGO STATRT  */
+.logo-first-part{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: #2196F3; 
+   }
+.logo-second-part{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: #000000; 
+   
+}
+/*  LOGO END  */
+/*  MENU STATRT  */
+.list{
+   list-style: none;
+}
+.link{
+   text-decoration: none;
+}
+.menu{
+
+}
+.menu-item{
+
+}
+.menu-link{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus{
+   color: #2196F3;
+}
+.contact-link{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: #757575;
+}
+.contact-link:hover,
+.contact-link:focus{
+   color: #2196F3;
+}
+/*  MENU END  */
+/*  HEADER END  */
+/*  MAIN STATRT  */
+.central-text{
+   
+   font-style: normal;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+}
+.button{
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 1.88;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
+   background-color: #2196F3;
+}
+.button:hover,
+.button:focus{
+   background-color: #188CE8;
+}
+
+.skill-name{
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #212121;
+}
+
+.skill-description{
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #757575;
+}
+.info-team{
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #212121;
+}
+.name{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   letter-spacing: 0.03em;
+   
+   color: #212121;
+}
+.profession{
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #757575;
+}
+/*  MAIN END  */
+/*  FOOTER START  */
+.adress{
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #000;
+
+}
+.adress:hover,
+.adress:focus{
+   color: #2196F3;
+}
+.mail-tel{
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: rgba(0, 0, 0, 0.6);
+}
+.mail-tel:hover,
+.mail-tel:focus{
+   color: #2196F3;
+}
+/*  FOOTER END  */
+
+/* ===== PORTFOLIO START ===== */
+/*  ==== SECTION BUTTON START ==== */
+.filters{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #212121;
+}
+.filters:hover,
+.filters:focus{
+   color: #FFFFFF;
+   background-color: #2196F3;
+}
+/*  ==== SECTION BUTTON END ==== */
+/*  ==== SECTION CARDS  START ==== */
+.project-name{
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+.project-description{
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.03em;
+   color: #757575;
+}
+/*  ==== SECTION CARDS END ==== */
+/* =====  PORTFOLIO END =====  */

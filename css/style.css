@@ -131,6 +131,7 @@ body{
 /*  MAIN END  */
 /*  FOOTER START  */
 .adress{
+   font-style: normal;
    font-weight: normal;
    font-size: 14px;
    line-height: 24px;
@@ -143,6 +144,7 @@ body{
    color: #2196F3;
 }
 .mail-tel{
+   font-style: normal;
    font-weight: normal;
    font-size: 14px;
    line-height: 24px;

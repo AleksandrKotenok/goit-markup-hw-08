@@ -1,10 +1,38 @@
 
+
+/*  =GENERAL start  */
+
 body{
    font-family: 'Roboto', 'Tahoma', sans-serif; 
    color: #000000; 
 }
-/*  HEADER STATRT  */
-/*  LOGO STATRT  */
+h1,h2,h3,p{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+ul{
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+}
+img{
+   display: block;
+}
+.container{
+   width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+
+}
+.list{
+   list-style: none;
+}
+.link{
+   text-decoration: none;
+}
+/*  =GENERAL end  */
+/*  =HEADER STATRT  */
+/*  ==LOGO STATRT  */
 .logo-first-part{
    font-family: 'Raleway', sans-serif;
    font-weight: bold;
@@ -22,19 +50,27 @@ body{
    color: #000000; 
    
 }
-/*  LOGO END  */
-/*  MENU STATRT  */
-.list{
-   list-style: none;
+.logo-first-part{
+   margin: 0 93px 0 0;
 }
-.link{
-   text-decoration: none;
+/*  ==LOGO END  */
+/*  ==MENU STATRT  */
+.header-container,
+.navigation,
+.menu,
+.contact{
+   display: flex;
+   align-items: center; 
+}
+.header-container{
+   justify-content: space-between;
 }
 .menu{
+  /* margin:0 331px 0 0 ; */
 
 }
-.menu-item{
-
+.menu-item:not(:last-child){
+   margin: 0 50px 0 0;
 }
 .menu-link{
    font-weight: 500;
@@ -47,6 +83,9 @@ body{
 .menu-link:focus{
    color: #2196F3;
 }
+.contact-item:not(:last-child){
+   margin: 0 50px 0 0;
+}
 .contact-link{
    font-weight: 500;
    font-size: 14px;
@@ -58,9 +97,10 @@ body{
 .contact-link:focus{
    color: #2196F3;
 }
-/*  MENU END  */
-/*  HEADER END  */
-/*  MAIN STATRT  */
+
+/*  ==MENU END  */
+/*  =HEADER END  */
+/*  =MAIN STATRT  */
 .central-text{
    
    font-style: normal;
@@ -72,6 +112,11 @@ body{
    text-transform: uppercase;
 }
 .button{
+   margin: auto;
+   width: 200px;
+   height: 50px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
    font-weight: bold;
    font-size: 16px;
    line-height: 1.88;
@@ -81,6 +126,7 @@ body{
    letter-spacing: 0.06em;
    color: #FFFFFF;
    background-color: #2196F3;
+   border-color: #2196F3;
 }
 .button:hover,
 .button:focus{
@@ -128,8 +174,8 @@ body{
    letter-spacing: 0.03em;
    color: #757575;
 }
-/*  MAIN END  */
-/*  FOOTER START  */
+/*  =MAIN END  */
+/*  =FOOTER START  */
 .adress{
    font-style: normal;
    font-weight: normal;
@@ -155,10 +201,10 @@ body{
 .mail-tel:focus{
    color: #2196F3;
 }
-/*  FOOTER END  */
+/*  =FOOTER END  */
 
 /* ===== PORTFOLIO START ===== */
-/*  ==== SECTION BUTTON START ==== */
+/*  = SECTION BUTTON START ==== */
 .filters{
    font-weight: 500;
    font-size: 16px;
@@ -172,8 +218,8 @@ body{
    color: #FFFFFF;
    background-color: #2196F3;
 }
-/*  ==== SECTION BUTTON END ==== */
-/*  ==== SECTION CARDS  START ==== */
+/*  = SECTION BUTTON END ==== */
+/*  = SECTION CARDS  START ==== */
 .project-name{
    font-weight: bold;
    font-size: 18px;
@@ -187,5 +233,5 @@ body{
    letter-spacing: 0.03em;
    color: #757575;
 }
-/*  ==== SECTION CARDS END ==== */
+/*  = SECTION CARDS END ==== */
 /* =====  PORTFOLIO END =====  */

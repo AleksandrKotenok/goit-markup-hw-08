@@ -43,8 +43,7 @@ img{
 .team-list,
 .skill-list,
 .filter-list,
-.card-list
-{
+.card-list{
    display: flex;
    align-items: center; 
 }
@@ -56,7 +55,7 @@ img{
    border-bottom:solid ;
    border-width: 0 0 1px 0;
    border-color: #ECECEC;
-   }
+}
 .logo-first-part{
    font-family: 'Raleway', sans-serif;
    font-weight: bold;
@@ -64,7 +63,7 @@ img{
    line-height: 1.19;
    letter-spacing: 0.03em;
    color: #2196F3; 
-   }
+}
 .logo-second-part{
    font-family: 'Raleway', sans-serif;
    font-weight: bold;
@@ -72,7 +71,6 @@ img{
    line-height: 1.19;
    letter-spacing: 0.03em;
    color: #000000; 
-   
 }
 .logo-first-part{
    margin: 0 93px 0 0;
@@ -81,9 +79,6 @@ img{
 /*  ==MENU STATRT  */
 .header-container{
    justify-content: space-between;
-   }
-.menu{
-  /* margin:0 331px 0 0 ; */
 }
 .menu-item:not(:last-child){
    margin: 0 50px 0 0;
@@ -159,10 +154,7 @@ img{
 /*  = Botton end */
 /*  = Our Skills  */
 .skill-list{
-   
-   
-   margin-left: -30px;
-   max-resolution: -30px;   
+   margin-left: -30px;   
 }
 .skill-item{
    width: 270px;
@@ -177,7 +169,6 @@ img{
    color: #212121;
    margin-bottom: 10px;
 }
-
 .skill-description{
    font-weight: normal;
    font-size: 14px;
@@ -193,7 +184,6 @@ img{
 .do-list{
    flex-wrap: wrap;
    margin-left: -30px;
-   max-resolution: -30px;
 }
 .do-item{
    margin-left: 30px;
@@ -207,7 +197,6 @@ img{
 .team-list{
    flex-wrap: wrap;
    margin-left: -30px;
-   max-resolution: -30px;
 }
 .team-item{
    margin-left: 30px;
@@ -268,7 +257,7 @@ img{
    line-height: 24px;
    letter-spacing: 0.03em;
    color: #FFFFFF;
-   }
+}
 .adress:hover,
 .adress:focus{
    color: #2196F3;
@@ -286,7 +275,6 @@ img{
    color: #2196F3;
 }
 /*  =FOOTER END  */
-
 /* ===== PORTFOLIO START ===== */
 /*  = SECTION BUTTON START ==== */
 .filter-list{
@@ -307,7 +295,7 @@ img{
    padding: 6px 22px;
    border-radius: 4px;
    border: 0;
-   }
+}
 .filters:hover,
 .filters:focus{
    color: #FFFFFF;
@@ -321,8 +309,6 @@ img{
    flex-wrap: wrap;
    margin-left: -30px;
    margin-top: -30px;
-   max-resolution: -30px;
-
 }
 .card-item{
    margin-left: 30px;

@@ -30,9 +30,28 @@ img{
 .link{
    text-decoration: none;
 }
+.section{
+   padding-bottom: 94px;
+}
+.header,
+.header-container,
+.navigation,
+.menu,
+.contact,
+.central-section,
+.do-list,
+.team-list,
+.skill-list
+{
+   display: flex;
+   align-items: center; 
+}
 /*  =GENERAL end  */
 /*  =HEADER STATRT  */
 /*  ==LOGO STATRT  */
+.header{
+   padding: 24px 0 25px 0;
+   }
 .logo-first-part{
    font-family: 'Raleway', sans-serif;
    font-weight: bold;
@@ -55,19 +74,11 @@ img{
 }
 /*  ==LOGO END  */
 /*  ==MENU STATRT  */
-.header-container,
-.navigation,
-.menu,
-.contact{
-   display: flex;
-   align-items: center; 
-}
 .header-container{
    justify-content: space-between;
 }
 .menu{
   /* margin:0 331px 0 0 ; */
-
 }
 .menu-item:not(:last-child){
    margin: 0 50px 0 0;
@@ -97,42 +108,62 @@ img{
 .contact-link:focus{
    color: #2196F3;
 }
-
 /*  ==MENU END  */
 /*  =HEADER END  */
 /*  =MAIN STATRT  */
+/*  = Botton start */
+.main-section{
+   background-color: #2F303A;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 200px;
+   margin-bottom: 94px ;
+}
 .central-text{
-   
+   width: 696px;
+   height: 120px;
    font-style: normal;
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
    text-align: center;
+   margin: 0 auto 30px auto ;
    letter-spacing: 0.06em;
    text-transform: uppercase;
+   color: #FFFFFF;
 }
 .button{
-   margin: auto;
-   width: 200px;
-   height: 50px;
+   padding:10px 32px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    font-weight: bold;
    font-size: 16px;
    line-height: 1.88;
-   display: flex;
-   align-items: center;
-   text-align: center;
    letter-spacing: 0.06em;
+   margin-bottom: 200px;
    color: #FFFFFF;
    background-color: #2196F3;
    border-color: #2196F3;
+   
 }
 .button:hover,
 .button:focus{
    background-color: #188CE8;
+   border-color: #188CE8;
 }
-
+/*  = Botton end */
+/*  = Our Skills  */
+.skill-list{
+   
+   
+   margin-left: -30px;
+   max-resolution: -30px;   
+}
+.skill-item{
+   width: 270px;
+   margin-left: 30px;
+}
 .skill-name{
    font-weight: bold;
    font-size: 14px;
@@ -140,6 +171,7 @@ img{
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #212121;
+   margin-bottom: 10px;
 }
 
 .skill-description{
@@ -149,6 +181,38 @@ img{
    letter-spacing: 0.03em;
    color: #757575;
 }
+/*  = Our Skills  */
+/*  = What we do start  */
+.info-team{
+margin-bottom: 50px;
+}
+.do-list{
+   flex-wrap: wrap;
+   margin-left: -30px;
+   max-resolution: -30px;
+}
+.do-item{
+   margin-left: 30px;
+}
+/*  = What we do start  */
+/*  =Our Team start  */
+.team{
+   padding-top: 186px;
+   background: #F5F4FA;
+}
+.team-list{
+   flex-wrap: wrap;
+   margin-left: -30px;
+   max-resolution: -30px;
+}
+.team-item{
+margin-left: 30px;
+background: #FFFFFF;
+/* material shadow v1 */
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
 .info-team{
    font-weight: bold;
    font-size: 36px;
@@ -156,6 +220,7 @@ img{
    text-align: center;
    letter-spacing: 0.03em;
    color: #212121;
+   margin-bottom: 50px;
 }
 .name{
    font-weight: 500;
@@ -163,6 +228,7 @@ img{
    line-height: 1.19;
    text-align: center;
    letter-spacing: 0.03em;
+   margin-top: 30px;
    
    color: #212121;
 }
@@ -173,18 +239,34 @@ img{
    text-align: center;
    letter-spacing: 0.03em;
    color: #757575;
+   margin: 10px 0 30px 0;
 }
+/*  =Our Team end  */
 /*  =MAIN END  */
 /*  =FOOTER START  */
+.footer{
+   background-color: #2F303A;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+   .logo-second-part-white{
+   color: #FFFFFF;
+   
+}
+.adress-item{
+   margin: 20px 0 9px 0;
+}
+.adress-item-second{
+   margin-bottom: 9px;
+}
 .adress{
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
    line-height: 24px;
    letter-spacing: 0.03em;
-   color: #000;
-
-}
+   color: #FFFFFF;
+   }
 .adress:hover,
 .adress:focus{
    color: #2196F3;
@@ -195,7 +277,7 @@ img{
    font-size: 14px;
    line-height: 24px;
    letter-spacing: 0.03em;
-   color: rgba(0, 0, 0, 0.6);
+   color: rgba(255, 255, 255, 0.6);
 }
 .mail-tel:hover,
 .mail-tel:focus{

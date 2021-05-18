@@ -41,7 +41,9 @@ img{
 .central-section,
 .do-list,
 .team-list,
-.skill-list
+.skill-list,
+.filter-list,
+.card-list
 {
    display: flex;
    align-items: center; 
@@ -51,6 +53,9 @@ img{
 /*  ==LOGO STATRT  */
 .header{
    padding: 24px 0 25px 0;
+   border-bottom:solid ;
+   border-width: 0 0 1px 0;
+   border-color: #ECECEC;
    }
 .logo-first-part{
    font-family: 'Raleway', sans-serif;
@@ -76,7 +81,7 @@ img{
 /*  ==MENU STATRT  */
 .header-container{
    justify-content: space-between;
-}
+   }
 .menu{
   /* margin:0 331px 0 0 ; */
 }
@@ -145,7 +150,6 @@ img{
    color: #FFFFFF;
    background-color: #2196F3;
    border-color: #2196F3;
-   
 }
 .button:hover,
 .button:focus{
@@ -184,7 +188,7 @@ img{
 /*  = Our Skills  */
 /*  = What we do start  */
 .info-team{
-margin-bottom: 50px;
+   margin-bottom: 50px;
 }
 .do-list{
    flex-wrap: wrap;
@@ -206,12 +210,10 @@ margin-bottom: 50px;
    max-resolution: -30px;
 }
 .team-item{
-margin-left: 30px;
-background: #FFFFFF;
-/* material shadow v1 */
-
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+   margin-left: 30px;
+   background: #FFFFFF;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
 }
 .info-team{
    font-weight: bold;
@@ -287,6 +289,14 @@ border-radius: 0px 0px 4px 4px;
 
 /* ===== PORTFOLIO START ===== */
 /*  = SECTION BUTTON START ==== */
+.filter-list{
+   justify-content: center;
+   padding-top: 94px;
+   padding-bottom: 50px;
+}
+.filter-item:not(:last-child){
+   margin: 0 8px 0 0;
+}
 .filters{
    font-weight: 500;
    font-size: 16px;
@@ -294,19 +304,42 @@ border-radius: 0px 0px 4px 4px;
    text-align: center;
    letter-spacing: 0.03em;
    color: #212121;
-}
+   padding: 6px 22px;
+   border-radius: 4px;
+   border: 0;
+   }
 .filters:hover,
 .filters:focus{
    color: #FFFFFF;
    background-color: #2196F3;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   border-radius: 4px;
 }
 /*  = SECTION BUTTON END ==== */
 /*  = SECTION CARDS  START ==== */
+.card-list{
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
+   max-resolution: -30px;
+
+}
+.card-item{
+   margin-left: 30px;
+   margin-top: 30px;
+}
+.card-border{
+   background: #FFFFFF;
+   border: 1px solid #EEEEEE;
+   box-sizing: border-box;
+   padding: 20px 24px;
+}
 .project-name{
    font-weight: bold;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   margin-bottom: 4px;
 }
 .project-description{
    font-weight: normal;

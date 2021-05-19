@@ -31,6 +31,7 @@ img{
    text-decoration: none;
 }
 .section{
+   padding-top: 94px;
    padding-bottom: 94px;
 }
 .header,
@@ -118,7 +119,7 @@ img{
    margin-left: auto;
    margin-right: auto;
    padding-top: 200px;
-   margin-bottom: 94px ;
+   padding-bottom: 200px;
 }
 .central-text{
    width: 696px;
@@ -141,7 +142,6 @@ img{
    font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.06em;
-   margin-bottom: 200px;
    color: #FFFFFF;
    background-color: #2196F3;
    border-color: #2196F3;
@@ -178,6 +178,9 @@ img{
 }
 /*  = Our Skills  */
 /*  = What we do start  */
+.we-do{
+   padding-bottom: 94px;
+}
 .info-team{
    margin-bottom: 50px;
 }
@@ -191,7 +194,6 @@ img{
 /*  = What we do start  */
 /*  =Our Team start  */
 .team{
-   padding-top: 186px;
    background: #F5F4FA;
 }
 .team-list{
@@ -213,14 +215,15 @@ img{
    color: #212121;
    margin-bottom: 50px;
 }
+.team-name{
+   padding-top: 30px;
+}
 .name{
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
    letter-spacing: 0.03em;
-   margin-top: 30px;
-   
    color: #212121;
 }
 .profession{
@@ -244,8 +247,11 @@ img{
    color: #FFFFFF;
    
 }
+.adress-company{
+   margin: 20px 0 60px 0;
+}
 .adress-item{
-   margin: 20px 0 9px 0;
+   margin-bottom: 9px;
 }
 .adress-item-second{
    margin-bottom: 9px;
@@ -277,10 +283,13 @@ img{
 /*  =FOOTER END  */
 /* ===== PORTFOLIO START ===== */
 /*  = SECTION BUTTON START ==== */
+.filters-section{
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 .filter-list{
    justify-content: center;
-   padding-top: 94px;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
 }
 .filter-item:not(:last-child){
    margin: 0 8px 0 0;

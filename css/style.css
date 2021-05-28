@@ -6,7 +6,7 @@ body{
    font-family: 'Roboto', 'Tahoma', sans-serif; 
    color: #000000; 
 }
-h1,h2,h3,p{
+h1,h2,h3,h4,p{
    margin-top: 0;
    margin-bottom: 0;
 }
@@ -95,6 +95,25 @@ img{
 .menu-link:focus{
    color: #2196F3;
 }
+.mail-icons{
+   width: 16px;
+   height: 12px;
+   fill: #757575;
+}
+.telephone-icons{
+   width: 10px;
+   height: 16px;
+   fill: #757575;
+}
+.telephone-mail{
+   display: flex;
+}
+.telephote-item{
+   display: flex;
+}
+.telephote-item:not(:last-child){
+   margin-right: 10px;
+}
 .contact-item:not(:last-child){
    margin: 0 50px 0 0;
 }
@@ -104,6 +123,9 @@ img{
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: #757575;
+   display: flex;
+   align-items: center;
+   
 }
 .contact-link:hover,
 .contact-link:focus{
@@ -114,12 +136,18 @@ img{
 /*  =MAIN STATRT  */
 /*  = Botton start */
 .main-section{
-   background-color: #2F303A;
+   max-width: 1600px;
+   background-color: #C4C4C4;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
    padding-top: 200px;
    padding-bottom: 200px;
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg.jpg");
+   background-size: cover;
 }
 .central-text{
    width: 696px;
@@ -160,6 +188,19 @@ img{
    width: 270px;
    margin-left: 30px;
 }
+.skill-icon-box{
+   height: 120px;
+   width: 270px;
+   background-color: #F5F4FA;
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.skill-icons{
+   width: 70px;
+   height: 70px;
+   }
 .skill-name{
    font-weight: bold;
    font-size: 14px;
@@ -216,9 +257,8 @@ img{
    margin-bottom: 50px;
 }
 .team-name{
-   padding-top: 30px;
-   padding-bottom: 30px;
-}
+   padding: 30px 32px;
+   }
 .name{
    font-weight: 500;
    font-size: 16px;
@@ -235,14 +275,76 @@ img{
    text-align: center;
    letter-spacing: 0.03em;
    color: #757575;
+   margin-bottom: 16px;
+}
+.social-list{
+   display: flex;
+   justify-content: space-between;
+}
+.social-list-link{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   background-color: #ffffff;
+   border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+   background-color: #2196F3;
+}
+.social-list-icon{
+   width: 20px;;
+   height: 20px;
+   fill: #AFB1B8;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+   fill: #EEEEEE;
 }
 /*  =Our Team end  */
+/*  =Our Clients start  */
+.clients-list{
+   display: flex;
+   justify-content: space-between;
+}
+.clients-item-link{
+   width: 170px;
+   height: 92px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 4px;
+   border: 1px solid #AFB1B8;
+}
+.clients-item-link:hover,
+.clients-item-link:focus{
+   border: 1px solid #2196F3;
+
+}
+.clients-icons{
+   width: 106px;
+   height: 60px;
+   fill: #AFB1B8;
+}
+.clients-icons:hover,
+.clients-icons:focus{
+   fill:#2196F3
+}
+/*  =Our Clients end  */
 /*  =MAIN END  */
 /*  =FOOTER START  */
 .footer{
    background-color: #2F303A;
    padding-top: 60px;
    padding-bottom: 60px;
+   }
+.footer-blocks{
+   display: flex;
+}
+.left-side{
+   margin-right: 70px;
 }
    .logo-second-part-white{
    color: #FFFFFF;
@@ -280,6 +382,45 @@ img{
 .mail-tel:hover,
 .mail-tel:focus{
    color: #2196F3;
+}
+.social-footer{
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-top: 12px;
+   padding-bottom: 20px;
+   }
+.social-link-footer{
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color:rgba(255, 255, 255, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social-list-footer{
+   display: flex;
+}
+.social-item-footer:not(:last-child){
+   margin-right: 10px;
+}
+.social-link-twitter{
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color:#2196F3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social-list-footer-icon{
+   width: 20px;;
+   height: 20px;
+   fill: #ffffff;
 }
 /*  =FOOTER END  */
 /* ===== PORTFOLIO START ===== */

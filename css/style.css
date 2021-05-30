@@ -57,6 +57,15 @@ img{
    border-width: 0 0 1px 0;
    border-color: #ECECEC;
 }
+.logo-first-part-header{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: #2196F3;
+   margin-right: 93px; 
+}
 .logo-first-part{
    font-family: 'Raleway', sans-serif;
    font-weight: bold;
@@ -72,9 +81,6 @@ img{
    line-height: 1.19;
    letter-spacing: 0.03em;
    color: #000000; 
-}
-.logo-first-part{
-   margin: 0 93px 0 0;
 }
 /*  ==LOGO END  */
 /*  ==MENU STATRT  */
@@ -99,23 +105,16 @@ img{
    width: 16px;
    height: 12px;
    fill: #757575;
+   margin-right: 10px;
 }
 .telephone-icons{
    width: 10px;
    height: 16px;
    fill: #757575;
-}
-.telephone-mail{
-   display: flex;
-}
-.telephote-item{
-   display: flex;
-}
-.telephote-item:not(:last-child){
    margin-right: 10px;
 }
 .contact-item:not(:last-child){
-   margin: 0 50px 0 0;
+   margin-right: 30px;
 }
 .contact-link{
    font-weight: 500;
@@ -131,6 +130,12 @@ img{
 .contact-link:focus{
    color: #2196F3;
 }
+.mail-icons:hover,
+.mail-icons:focus,
+.telephone-icons:hover,
+.telephone-icons:focus{
+   fill: #2196F3;  
+} 
 /*  ==MENU END  */
 /*  =HEADER END  */
 /*  =MAIN STATRT  */
@@ -189,8 +194,8 @@ img{
    margin-left: 30px;
 }
 .skill-icon-box{
-   height: 120px;
-   width: 270px;
+   width: 100%;
+   padding: 25px 0;
    background-color: #F5F4FA;
    margin-bottom: 30px;
    display: flex;
@@ -309,19 +314,20 @@ img{
    display: flex;
    justify-content: space-between;
 }
+.clients-item-box{
+   width: 100%;
+   padding:16px 32px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;  
+}
 .clients-item-link{
-   width: 170px;
-   height: 92px;
    display: flex;
    align-items: center;
-   justify-content: center;
-   border-radius: 4px;
-   border: 1px solid #AFB1B8;
+   justify-content: center;  
 }
-.clients-item-link:hover,
-.clients-item-link:focus{
+.clients-item-box:hover,
+.clients-item-box:focus{
    border: 1px solid #2196F3;
-
 }
 .clients-icons{
    width: 106px;
@@ -390,8 +396,7 @@ img{
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #FFFFFF;
-   padding-top: 12px;
-   padding-bottom: 20px;
+   margin-bottom: 20px;
    }
 .social-link-footer{
    width: 44px;
@@ -402,21 +407,17 @@ img{
    align-items: center;
    justify-content: center;
 }
+.social-link-footer:hover,
+.social-link-footer:focus{
+   background-color: #2196F3;
+}
 .social-list-footer{
    display: flex;
 }
 .social-item-footer:not(:last-child){
    margin-right: 10px;
 }
-.social-link-twitter{
-   width: 44px;
-   height: 44px;
-   border-radius: 50%;
-   background-color:#2196F3;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+
 .social-list-footer-icon{
    width: 20px;;
    height: 20px;
@@ -463,6 +464,10 @@ img{
 .card-item{
    margin-left: 30px;
    margin-top: 30px;
+}
+.card-item:hover,
+.card-item:focus{
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-border{
    background: #FFFFFF;

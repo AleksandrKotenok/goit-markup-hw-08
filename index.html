@@ -16,41 +16,27 @@
       <header class="header">
          <div class="container header-container">
             <nav class="navigation">
-               <a class="logo-first-part link" href="./index.html">Web<span class="logo-second-part">Studio</span></a>
+               <a class="logo-first-part-header link" href="./index.html">Web<span class="logo-second-part">Studio</span></a>
                <ul class=" menu list">
-                  <li class="menu-item"><a class="menu-link link" href="./index.html">Студия</a></li>
+                  <li class="menu-item"><a class="menu-link link current" href="./index.html">Студия</a></li>
                   <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Портфолио</a></li>
                   <li class="menu-item"><a class="menu-link link" href="./index.html">Контакты</a></li>
                </ul>
             </nav>
             <ul class="contact list">
                <li class="contact-item">
-                  <ul  class="telephone-mail list" >
-                     <li  class="telephote-item">
-                        <a class="contact-link" href="mailto:info@devstudio.com">
-                           <svg class="mail-icons">
-                              <use href="./images/sprite.svg#icon-envelope"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li class="telephote-item">
-                        <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                     </li>
-                  </ul>
+                  <a class="contact-link link" href="mailto:info@devstudio.com">
+                     <svg class="mail-icons">
+                     <use href="./images/sprite.svg#icon-envelope"></use>
+                     </svg>info@devstudio.com
+                  </a>
                </li>
                <li class="contact-item">
-                  <ul class="telephone-mail list ">
-                        <li class="telephote-item">
-                           <a class="contact-link" href="tel:+380991111111">
-                              <svg class="telephone-icons">
-                                 <use href="./images/sprite.svg#icon-smartphone"></use>
-                              </svg>
-                           </a>
-                        </li class="telephote-item">
-                        <li>
-                           <a class="contact-link link" href="tel:+380991111111">+38 099 111 11 11</a>
-                        </li>
-                  </ul>
+                  <a class="contact-link link" href="tel:+380991111111">
+                     <svg class="telephone-icons">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                     </svg>+38 099 111 11 11
+                  </a>
                </li>
             </ul>
          </div>
@@ -69,38 +55,38 @@
             <div class="container">
                <ul class="skill-list list">
                   <li  class="skill-item">
-                     <p class="skill-icon-box">
+                     <div class="skill-icon-box">
                         <svg class="skill-icons">
                            <use href="./images/sprite.svg#icon-antenna"></use>
                         </svg>
-                     </p>   
+                     </div>   
                      <h3 class="skill-name">Внимание к деталям</h3>
                      <p class="skill-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                   </li>
                   <li class="skill-item">
-                     <p class="skill-icon-box">
+                     <div class="skill-icon-box">
                         <svg class="skill-icons">
                            <use href="./images/sprite.svg#icon-clock"></use>
                         </svg>
-                     </p>
+                     </div>
                      <h3 class="skill-name">Пунктуальность</h3>
                      <p class="skill-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                   </li>
                   <li class="skill-item">
-                     <p class="skill-icon-box">
+                     <div class="skill-icon-box">
                         <svg class="skill-icons">
                            <use href="./images/sprite.svg#icon-diagram"></use>
                         </svg>
-                     </p>   
+                     </div>   
                      <h3 class="skill-name">Планирование</h3>
                      <p class="skill-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                   </li>
                   <li class="skill-item">
-                     <p class="skill-icon-box">
+                     <div class="skill-icon-box">
                         <svg class="skill-icons">
                            <use href="./images/sprite.svg#icon-astronaut"></use>
                         </svg>
-                     </p>   
+                     </div>   
                      <h3 class="skill-name">Современные технологии</h3>
                      <p class="skill-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                   </li>
@@ -279,49 +265,60 @@
                <h2 class="info-team">Постоянные клиенты</h2>
                <ul class="clients-list list">
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client1"></use>
-                        </svg>
-                     </a> 
+                     <div class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client1"></use>
+                           </svg>
+                        </a>
+                     </div> 
                   </li>
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client2"></use>
-                        </svg>
-                     </a>   
+                     <div  class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client2"></use>
+                           </svg>
+                        </a>
+                     </div>   
                   </li>
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client3"></use>
-                        </svg>
-                     </a>   
+                     <div class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client3"></use>
+                           </svg>
+                        </a> 
+                     </div>  
                   </li>
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client4"></use>
-                        </svg>
-                     </a>   
+                     <div class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client4"></use>
+                           </svg>
+                        </a>
+                     </div>   
                   </li>
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client5"></use>
-                        </svg>
-                     </a>   
+                     <div class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client5"></use>
+                           </svg>
+                        </a>
+                     </div>   
                   </li>
                   <li class="clients-item">
-                     <a class="clients-item-link" href="">
-                        <svg class="clients-icons">
-                           <use href="./images/sprite.svg#icon-client6"></use>
-                        </svg>
-                     </a>   
+                     <div class="clients-item-box">
+                        <a class="clients-item-link" href="">
+                           <svg class="clients-icons">
+                              <use href="./images/sprite.svg#icon-client6"></use>
+                           </svg>
+                        </a>
+                     </div>   
                   </li>
                </ul>
-
             </div>
          </section>
       </main>
@@ -355,7 +352,7 @@
                      </a>
                   </li>
                   <li class="social-item-footer">
-                     <a href="" class="social-link-twitter">
+                     <a href="" class="social-link-footer">
                         <svg class="social-list-footer-icon">
                            <use href="./images/sprite.svg#icon-twitter"></use>
                         </svg>

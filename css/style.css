@@ -130,12 +130,13 @@ img{
 .contact-link:focus{
    color: #2196F3;
 }
-.mail-icons:hover,
-.mail-icons:focus,
-.telephone-icons:hover,
-.telephone-icons:focus{
-   fill: #2196F3;  
-} 
+
+.contact-link:hover .telephone-icons,
+.contact-link:focus .telephone-icons,
+.contact-link:hover .mail-icons,
+.contact-link:focus .mail-icons{
+   fill: #2196F3;
+   }
 /*  ==MENU END  */
 /*  =HEADER END  */
 /*  =MAIN STATRT  */
@@ -334,8 +335,8 @@ img{
    height: 60px;
    fill: #AFB1B8;
 }
-.clients-icons:hover,
-.clients-icons:focus{
+.clients-item-box:hover .clients-icons,
+.clients-item-box:hover .clients-icons{
    fill:#2196F3
 }
 /*  =Our Clients end  */

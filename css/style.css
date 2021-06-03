@@ -91,27 +91,37 @@ img{
    margin: 0 50px 0 0;
 }
 .menu-link{
+   position: relative;
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: #212121;
+   padding-bottom: 32px;
+   transition-duration: 250ms;
+   
+
+
 }
 .menu-link:hover,
 .menu-link:focus{
-   color: #2196F3;
+   color: #2196F3; 
 }
 .mail-icons{
    width: 16px;
    height: 12px;
    fill: #757575;
    margin-right: 10px;
+   transition:fill 250ms linear;
+
 }
 .telephone-icons{
    width: 10px;
    height: 16px;
    fill: #757575;
    margin-right: 10px;
+   transition:fill 250ms linear;
+
 }
 .contact-item:not(:last-child){
    margin-right: 30px;
@@ -124,6 +134,7 @@ img{
    color: #757575;
    display: flex;
    align-items: center;
+   transition:color 250ms linear;
    
 }
 .contact-link:hover,
@@ -178,12 +189,13 @@ img{
    letter-spacing: 0.06em;
    color: #FFFFFF;
    background-color: #2196F3;
-   border-color: #2196F3;
+   border: 0;
+   transition:background-color 250ms linear;
+
 }
 .button:hover,
 .button:focus{
    background-color: #188CE8;
-   border-color: #188CE8;
 }
 /*  = Botton end */
 /*  = Our Skills  */
@@ -236,7 +248,25 @@ img{
    margin-left: -30px;
 }
 .do-item{
+   position: relative;
    margin-left: 30px;
+}
+.do-item-description{
+   display: flex;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   color: #ffffff;
+   background: rgba(47, 48, 58, 0.8);
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.14;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
 /*  = What we do start  */
 /*  =Our Team start  */
@@ -295,6 +325,7 @@ img{
    height: 44px;
    background-color: #ffffff;
    border-radius: 50%;
+   transition:background-color 250ms linear;
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -304,6 +335,7 @@ img{
    width: 20px;;
    height: 20px;
    fill: #AFB1B8;
+   transition:fill 250ms linear;
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
@@ -319,7 +351,8 @@ img{
    width: 100%;
    padding:16px 32px;
    border: 1px solid #AFB1B8;
-   border-radius: 4px;  
+   border-radius: 4px;
+   transition:border 250ms linear;  
 }
 .clients-item-link{
    display: flex;
@@ -334,6 +367,7 @@ img{
    width: 106px;
    height: 60px;
    fill: #AFB1B8;
+   transition:fill 250ms linear;
 }
 .clients-item-box:hover .clients-icons,
 .clients-item-box:hover .clients-icons{
@@ -373,6 +407,7 @@ img{
    line-height: 24px;
    letter-spacing: 0.03em;
    color: #FFFFFF;
+   transition: color 250ms linear;
 }
 .adress:hover,
 .adress:focus{
@@ -385,6 +420,7 @@ img{
    line-height: 24px;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
+   transition: color 250ms linear;
 }
 .mail-tel:hover,
 .mail-tel:focus{
@@ -407,6 +443,7 @@ img{
    display: flex;
    align-items: center;
    justify-content: center;
+   transition: background-color 250ms linear ;
 }
 .social-link-footer:hover,
 .social-link-footer:focus{
@@ -425,10 +462,67 @@ img{
    fill: #ffffff;
 }
 /*  =FOOTER END  */
+/* MODAL  Start*/
+.backdrop{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.2);
+   z-index: 10;
+}
+.is-hidden{
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+.modal{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 528px;
+   height: 581px;
+   background-color: #ffffff;
+   border-radius: 4px;
+}
+.close-button{
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   width: 30px;
+   height: 30px;
+   background: transparent;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   border-radius: 50%;
+}
+.close-button-icon{
+   fill:#000000;
+   width: 18px;
+   height: 18px;
+}
+/* MODAL  End*/
 /* ===== PORTFOLIO START ===== */
 /*  = SECTION BUTTON START ==== */
 .current{
    color: #2196F3
+}
+.current::after{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   display: block;
+   content: "";
+   width: 100%;
+   height: 4px;
+   background: #2196F3;
+   border-radius: 2px;
 }
 .filter-list{
    justify-content: center;
@@ -447,13 +541,16 @@ img{
    padding: 6px 22px;
    border-radius: 4px;
    border: 0;
+   transition: background-color, color,box-shadow 250ms linear ;
 }
 .filters:hover,
 .filters:focus{
    color: #FFFFFF;
    background-color: #2196F3;
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   border-radius: 4px;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+   0px 1px 2px rgba(0, 0, 0, 0.08),
+   0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 /*  = SECTION BUTTON END ==== */
 /*  = SECTION CARDS  START ==== */
@@ -465,10 +562,34 @@ img{
 .card-item{
    margin-left: 30px;
    margin-top: 30px;
+   transition: box-shadow 250ms linear ;
 }
 .card-item:hover,
 .card-item:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-item:hover .overlay,
+.card-item:focus .overlay{
+   transform: translateY(0);
+
+}
+.card-wrapper{
+   position: relative;
+   overflow: hidden;
+}
+.overlay{
+   padding: 63px 24px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   color: #FFFFFF;
+   background: rgba(33, 150, 243, 0.9);
+   overflow: auto;
+   transform: translateY(101%);
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-border{
    background: #FFFFFF;
@@ -482,6 +603,7 @@ img{
    line-height: 2;
    letter-spacing: 0.06em;
    margin-bottom: 4px;
+   color: #000000;
 }
 .project-description{
    font-weight: normal;

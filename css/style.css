@@ -112,7 +112,7 @@ img{
    height: 12px;
    fill: #757575;
    margin-right: 10px;
-   transition:fill 250ms linear;
+   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .telephone-icons{
@@ -120,7 +120,7 @@ img{
    height: 16px;
    fill: #757575;
    margin-right: 10px;
-   transition:fill 250ms linear;
+   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .contact-item:not(:last-child){
@@ -134,7 +134,7 @@ img{
    color: #757575;
    display: flex;
    align-items: center;
-   transition:color 250ms linear;
+   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 .contact-link:hover,
@@ -190,7 +190,7 @@ img{
    color: #FFFFFF;
    background-color: #2196F3;
    border: 0;
-   transition:background-color 250ms linear;
+   transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button:hover,
@@ -325,7 +325,7 @@ img{
    height: 44px;
    background-color: #ffffff;
    border-radius: 50%;
-   transition:background-color 250ms linear;
+   transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -335,7 +335,7 @@ img{
    width: 20px;;
    height: 20px;
    fill: #AFB1B8;
-   transition:fill 250ms linear;
+   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
@@ -347,30 +347,28 @@ img{
    display: flex;
    justify-content: space-between;
 }
-.clients-item-box{
+.clients-item-link{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
    width: 100%;
    padding:16px 32px;
    border: 1px solid #AFB1B8;
    border-radius: 4px;
-   transition:border 250ms linear;  
+   transition:border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.clients-item-link{
-   display: flex;
-   align-items: center;
-   justify-content: center;  
-}
-.clients-item-box:hover,
-.clients-item-box:focus{
+.clients-item-link:hover,
+.clients-item-link:focus{
    border: 1px solid #2196F3;
 }
 .clients-icons{
    width: 106px;
    height: 60px;
    fill: #AFB1B8;
-   transition:fill 250ms linear;
+   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-item-box:hover .clients-icons,
-.clients-item-box:hover .clients-icons{
+.clients-item-link:hover .clients-icons,
+.clients-item-link:focus .clients-icons{
    fill:#2196F3
 }
 /*  =Our Clients end  */
@@ -407,7 +405,7 @@ img{
    line-height: 24px;
    letter-spacing: 0.03em;
    color: #FFFFFF;
-   transition: color 250ms linear;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress:hover,
 .adress:focus{
@@ -420,7 +418,7 @@ img{
    line-height: 24px;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
-   transition: color 250ms linear;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-tel:hover,
 .mail-tel:focus{
@@ -443,7 +441,7 @@ img{
    display: flex;
    align-items: center;
    justify-content: center;
-   transition: background-color 250ms linear ;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .social-link-footer:hover,
 .social-link-footer:focus{
@@ -501,11 +499,17 @@ img{
    border: 1px solid rgba(0, 0, 0, 0.1);
    cursor: pointer;
    border-radius: 50%;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
 }
 .close-button-icon{
-   fill:#000000;
+   fill:currentColor;
    width: 18px;
    height: 18px;
+}
+.close-button-icon:hover,
+.close-button-icon:focus{
+   color:#2196f3;
 }
 /* MODAL  End*/
 /* ===== PORTFOLIO START ===== */
@@ -541,7 +545,7 @@ img{
    padding: 6px 22px;
    border-radius: 4px;
    border: 0;
-   transition: background-color, color,box-shadow 250ms linear ;
+   transition: background-color, color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .filters:hover,
 .filters:focus{
@@ -562,14 +566,14 @@ img{
 .card-item{
    margin-left: 30px;
    margin-top: 30px;
-   transition: box-shadow 250ms linear ;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item:hover,
 .card-item:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-item:hover .overlay,
-.card-item:focus .overlay{
+.card-item-link:hover .overlay,
+.card-item-link:focus .overlay{
    transform: translateY(0);
 
 }

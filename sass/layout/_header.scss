@@ -32,10 +32,10 @@
 .header-container{
    justify-content: space-between;
 }
-.menu-item:not(:last-child){
+.menu__item:not(:last-child){
    margin: 0 50px 0 0;
 }
-.menu-link{
+.menu__link{
    position: relative;
    font-weight: 500;
    font-size: 14px;
@@ -49,7 +49,7 @@
          color: #2196F3; 
       }
 }
-.mail-icons{
+.contact-icons__mail{
    width: 16px;
    height: 12px;
    fill: #757575;
@@ -57,7 +57,7 @@
    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.telephone-icons{
+.contact-icons__telephone{
    width: 10px;
    height: 16px;
    fill: #757575;
@@ -65,10 +65,10 @@
    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.contact-item:not(:last-child){
+.contact__item:not(:last-child){
    margin-right: 30px;
 }
-.contact-link{
+.contact-icons{
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;

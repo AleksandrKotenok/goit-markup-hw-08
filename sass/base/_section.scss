@@ -1,0 +1,24 @@
+.list{
+   list-style: none;
+}
+.link{
+   text-decoration: none;
+}
+.section{
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+.header,
+.header-container,
+.navigation,
+.menu,
+.contact,
+.central-section,
+.do-list,
+.team-list,
+.skill-list,
+.filter-list,
+.card-list{
+   display: flex;
+   align-items: center; 
+}

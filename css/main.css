@@ -33,7 +33,7 @@ img {
 }
 
 .header,
-.header-container,
+.header__container,
 .header__navigation,
 .menu,
 .contact,
@@ -363,35 +363,11 @@ img {
   border-color: #ECECEC;
 }
 
-.logo-first-part-header {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
+.header__logo-first-part {
   margin-right: 93px;
 }
 
-.logo-first-part {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.logo-second-part {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.header-container {
+.header__container {
   justify-content: space-between;
 }
 
@@ -449,11 +425,36 @@ img {
   color: #2196F3;
 }
 
-.contact-icons:hover .telephone-icons,
-.contact-icons:focus .telephone-icons,
-.contact-icons:hover .mail-icons,
-.contact-icons:focus .mail-icons {
+.contact-icons:hover .contact-icons__telephone,
+.contact-icons:focus .contact-icons__telephone,
+.contact-icons:hover .contact-icons__mail,
+.contact-icons:focus .contact-icons__mail {
   fill: #2196F3;
+}
+
+.logo-first-part {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.logo-second-part {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-second-part_theme_white {
+  color: #000000;
+}
+
+.logo-second-part_theme_dark {
+  color: #FFFFFF;
 }
 
 .main-section {
@@ -654,10 +655,6 @@ img {
 
 .left-side {
   margin-right: 70px;
-}
-
-.logo-second-part-white {
-  color: #FFFFFF;
 }
 
 .adress-company {

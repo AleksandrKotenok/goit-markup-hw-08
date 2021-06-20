@@ -3,38 +3,17 @@
    border-bottom:solid ;
    border-width: 0 0 1px 0;
    border-color: #ECECEC;
+      &__logo-first-part{
+         margin-right: 93px; 
+      }
 }
-.logo-first-part-header{
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
-   font-size: 26px;
-   line-height: 1.19;
-   letter-spacing: 0.03em;
-   color: #2196F3;
-   margin-right: 93px; 
-}
-.logo-first-part{
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
-   font-size: 26px;
-   line-height: 1.19;
-   letter-spacing: 0.03em;
-   color: #2196F3; 
-}
-.logo-second-part{
-   font-family: 'Raleway', sans-serif;
-   font-weight: bold;
-   font-size: 26px;
-   line-height: 1.19;
-   letter-spacing: 0.03em;
-   color: #000000; 
-}
-.header-container{
+.header__container{
    justify-content: space-between;
 }
 .menu__item:not(:last-child){
    margin: 0 50px 0 0;
-}
+   }
+
 .menu__link{
    position: relative;
    font-weight: 500;
@@ -81,10 +60,10 @@
       &:focus{
          color: #2196F3;
       }
-      &:hover .telephone-icons,
-      &:focus .telephone-icons,
-      &:hover .mail-icons,
-      &:focus .mail-icons{
+      &:hover .contact-icons__telephone,
+      &:focus .contact-icons__telephone,
+      &:hover .contact-icons__mail,
+      &:focus .contact-icons__mail{
          fill: #2196F3;
       }
 }

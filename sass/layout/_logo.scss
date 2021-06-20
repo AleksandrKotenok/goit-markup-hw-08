@@ -1,0 +1,24 @@
+.logo-first-part{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: #2196F3; 
+}
+.logo-second-part{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   
+}
+// modificator start
+.logo-second-part_theme_white{
+   color: #000000;
+}
+.logo-second-part_theme_dark{
+   color: #FFFFFF;
+}
+// modificator end

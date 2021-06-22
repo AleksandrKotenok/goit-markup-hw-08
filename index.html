@@ -16,24 +16,24 @@
       <header class="header">
          <div class="header__container container">
             <nav class="header__navigation">
-               <a class="logo-first-part header__logo-first-part link" href="./index.html">Web<span class="logo-second-part logo-second-part_theme_white">Studio</span></a>
-               <ul class=" menu list">
-                  <li class="menu__item"><a class="menu__link link current" href="./index.html">Студия</a></li>
-                  <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфолио</a></li>
-                  <li class="menu__item"><a class="menu__link link" href="./index.html">Контакты</a></li>
+               <a class="logo-first-part header__logo-first-part" href="./index.html">Web<span class="logo-second-part logo-second-part_theme_white">Studio</span></a>
+               <ul class=" menu">
+                  <li class="menu__item"><a class="menu__link menu__link--current" href="./index.html">Студия</a></li>
+                  <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                  <li class="menu__item"><a class="menu__link" href="./index.html">Контакты</a></li>
                </ul>
             </nav>
-            <ul class="contact list">
+            <ul class="contact">
                <li class="contact__item">
-                  <a class="contact-icons link" href="mailto:info@devstudio.com">
-                     <svg class="contact-icons__mail">
+                  <a class="contact__link" href="mailto:info@devstudio.com">
+                     <svg class="contact__link__mail">
                      <use href="./images/sprite.svg#icon-envelope"></use>
                      </svg>info@devstudio.com
                   </a>
                </li>
                <li class="contact__item">
-                  <a class="contact-icons link" href="tel:+380991111111">
-                     <svg class="contact-icons__telephone">
+                  <a class="contact__link" href="tel:+380991111111">
+                     <svg class="contact__link__telephone">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                      </svg>+38 099 111 11 11
                   </a>
@@ -44,51 +44,51 @@
          <!--Main-->
       <main>
          <!--button-->
-         <section class="main-section">
+         <section class="hero">
             <div class="container">
-               <h1 class="central-text">Эффективные решения для вашего бизнеса</h1>
-               <button class="button" type="button" data-modal-open>Заказать услугу</button>
+               <h1 class="hero__titel">Эффективные решения для вашего бизнеса</h1>
+               <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
             </div>
          </section>
          <!--Our Skills-->
-         <section class="section">
+         <section class="skill section">
             <div class="container">
-               <ul class="skill-list list">
-                  <li  class="skill-item">
-                     <div class="skill-icon-box">
-                        <svg class="skill-icons">
+               <ul class="skill__list">
+                  <li  class="skill__item">
+                     <div class="skill__icon-box">
+                        <svg class="skill__icons">
                            <use href="./images/sprite.svg#icon-antenna"></use>
                         </svg>
                      </div>   
-                     <h3 class="skill-name">Внимание к деталям</h3>
-                     <p class="skill-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                     <h3 class="skill__name">Внимание к деталям</h3>
+                     <p class="skill__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                   </li>
-                  <li class="skill-item">
-                     <div class="skill-icon-box">
-                        <svg class="skill-icons">
+                  <li class="skill__item">
+                     <div class="skill__icon-box">
+                        <svg class="skill__icons">
                            <use href="./images/sprite.svg#icon-clock"></use>
                         </svg>
                      </div>
-                     <h3 class="skill-name">Пунктуальность</h3>
-                     <p class="skill-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                     <h3 class="skill__name">Пунктуальность</h3>
+                     <p class="skill__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                   </li>
-                  <li class="skill-item">
-                     <div class="skill-icon-box">
-                        <svg class="skill-icons">
+                  <li class="skill__item">
+                     <div class="skill__icon-box">
+                        <svg class="skill__icons">
                            <use href="./images/sprite.svg#icon-diagram"></use>
                         </svg>
                      </div>   
-                     <h3 class="skill-name">Планирование</h3>
-                     <p class="skill-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                     <h3 class="skill__name">Планирование</h3>
+                     <p class="skill__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                   </li>
-                  <li class="skill-item">
-                     <div class="skill-icon-box">
-                        <svg class="skill-icons">
+                  <li class="skill__item">
+                     <div class="skill__icon-box">
+                        <svg class="skill__icons">
                            <use href="./images/sprite.svg#icon-astronaut"></use>
                         </svg>
                      </div>   
-                     <h3 class="skill-name">Современные технологии</h3>
-                     <p class="skill-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                     <h3 class="skill__name">Современные технологии</h3>
+                     <p class="skill__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                   </li>
                </ul>
             </div>
@@ -96,23 +96,23 @@
          <!--What we do-->
          <section class="we-do">
             <div class="container">
-               <h2 class="info-team">Чем мы занимаемся</h2>
-               <ul class="do-list list">
-                  <li class="do-item">
+               <h2 class="we-do__title">Чем мы занимаемся</h2>
+               <ul class="we-do__list">
+                  <li class="we-do__item">
                      <img src="./images/code1-sq.jpg" alt="Проектирование" width="370" height="294">
-                     <p class="do-item-description">
+                     <p class="we-do__description">
                         Десктопные приложения
                      </p>
                   </li>
-                  <li class="do-item">
+                  <li class="we-do__item">
                      <img src="./images/phone2-sq.jpg" alt="Разработка" width="370" height="294">
-                     <p class="do-item-description">
+                     <p class="we-do__description">
                         Мобильные приложения
                      </p>
                   </li>
-                  <li class="do-item">
+                  <li class="we-do__item">
                      <img src="./images/tab3-sq.jpg" alt="Дизайн" width="370px" height="294px">
-                     <p class="do-item-description">
+                     <p class="we-do__description">
                         Дизайнерские решения
                      </p>
                   </li>
@@ -123,13 +123,13 @@
          <section class="team section">
             <div class="container">
                <h2 class="info-team">Наша команда</h2>
-               <ul class="team-list list">
+               <ul class="team-list">
                   <li class="team-item">
                      <img src="./images/card-pd-sq.jpg" alt="Игорь Демьяненко" width="270" height="260">
                      <div class="team-name">
                         <h3 class="name">Игорь Демьяненко</h3>
                         <p class="profession" lang="en">Product Designer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                            <li class="social-list-item">
                               <a href="" class="social-list-link">
                                  <svg class="social-list-icon">
@@ -165,7 +165,7 @@
                      <div class="team-name">
                         <h3 class="name">Ольга Репина</h3>
                         <p class="profession" lang="en">Frontend Developer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                            <li class="social-list-item">
                               <a href="" class="social-list-link">
                                  <svg class="social-list-icon">
@@ -202,7 +202,7 @@
                      <div class="team-name">
                         <h3 class="name">Николай Тарасов</h3>
                         <p class="profession" lang="en">Marketing</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                            <li class="social-list-item">
                               <a href="" class="social-list-link">
                                  <svg class="social-list-icon">
@@ -239,7 +239,7 @@
                      <div class="team-name">
                         <h3 class="name">Михаил Ермаков</h3>
                         <p class="profession" lang="en">UI Designer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                            <li class="social-list-item">
                               <a href="" class="social-list-link">
                                  <svg class="social-list-icon">
@@ -278,7 +278,7 @@
          <section class="clients section">
             <div class="container">
                <h2 class="info-team">Постоянные клиенты</h2>
-               <ul class="clients-list list">
+               <ul class="clients-list">
                   <li class="clients-item">
                      <a class="clients-item-link" href="">
                         <svg class="clients-icons">
@@ -329,24 +329,24 @@
       <footer class="footer">
          <div class="container footer-blocks">
             <div class="left-side" >
-               <a class="logo-first-part link" href="./index.html">Web<span class="logo-second-part logo-second-part_theme_dark">Studio</span></a>
+               <a class="logo-first-part" href="./index.html">Web<span class="logo-second-part logo-second-part_theme_dark">Studio</span></a>
                <address class="adress-company">
-                  <ul class="adress-list list">
+                  <ul class="adress-list">
                      <li class="adress-item">
-                        <a class="adress link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a class="adress" href="">г. Киев, пр-т Леси Украинки, 26</a>
                      </li>
                      <li class="adress-item-second">
-                        <a class="mail-tel link" href="mailto:info@example.com">info@example.com</a>
+                        <a class="mail-tel" href="mailto:info@example.com">info@example.com</a>
                      </li>
                      <li>
-                        <a class="mail-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <a class="mail-tel" href="tel:+380991111111">+38 099 111 11 11</a>
                      </li>
                   </ul>
                </address>
             </div>
             <div class="middle-side">
                <h4 class="social-footer">присоединяйтесь</h4>
-               <ul class="social-list-footer list">
+               <ul class="social-list-footer">
                   <li class="social-item-footer">
                      <a href="" class="social-link-footer">
                         <svg class="social-list-footer-icon">

@@ -1,4 +1,4 @@
-.main-section{
+.hero{
    max-width: 1600px;
    background-color: #C4C4C4;
    text-align: center;
@@ -12,7 +12,7 @@
       url("../images/hero-bg.jpg");
    background-size: cover;
 }
-.central-text{
+.hero__titel{
    width: 696px;
    height: 120px;
    font-style: normal;

@@ -1,36 +1,38 @@
-.skill-list{
-   margin-left: -30px;   
-}
-.skill-item{
-   width: 270px;
-   margin-left: 30px;
-}
-.skill-icon-box{
-   width: 100%;
-   padding: 25px 0;
-   background-color: #F5F4FA;
-   margin-bottom: 30px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.skill-icons{
-   width: 70px;
-   height: 70px;
+.skill{
+   &__list{
+      margin-left: -30px;   
    }
-.skill-name{
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   color: #212121;
-   margin-bottom: 10px;
-}
-.skill-description{
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 24px;
-   letter-spacing: 0.03em;
-   color: #757575;
+   &__item{
+      width: 270px;
+      margin-left: 30px;
+   }
+   &__icon-box{
+      width: 100%;
+      padding: 25px 0;
+      background-color: #F5F4FA;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__icons{
+      width: 70px;
+      height: 70px;
+   }
+   &__name{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #212121;
+      margin-bottom: 10px;
+   }
+   &__description{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: #757575;
+   }
 }

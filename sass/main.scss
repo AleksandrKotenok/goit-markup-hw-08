@@ -1,4 +1,7 @@
 
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
 // BASE
 @import "./base/common";
 @import "./base/container";
@@ -22,9 +25,5 @@
 @import ".//layout/our-clients";
 @import ".//layout/footer";
 //LAYOUT portfolio
-@import ".//layout/buttons";
+@import ".//layout/filters";
 @import ".//layout/cards";
-// UTILS
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/current";

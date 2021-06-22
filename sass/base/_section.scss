@@ -1,9 +1,4 @@
-.list{
-   list-style: none;
-}
-.link{
-   text-decoration: none;
-}
+
 .section{
    padding-top: 94px;
    padding-bottom: 94px;
@@ -14,9 +9,9 @@
 .menu,
 .contact,
 .central-section,
-.do-list,
+.we-do__list,
 .team-list,
-.skill-list,
+.skill__list,
 .filter-list,
 .card-list{
    display: flex;

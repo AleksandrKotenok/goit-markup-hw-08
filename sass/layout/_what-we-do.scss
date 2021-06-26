@@ -1,6 +1,11 @@
-.we-do{
-   padding-bottom: 94px;
-      &__title{
+.we-do {
+   @media screen and (max-width: 1199px) {
+      display: none;
+   }
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-bottom: 94px;
+      &__title {
          font-weight: bold;
          font-size: 36px;
          line-height: 42px;
@@ -9,15 +14,14 @@
          color: #212121;
          margin-bottom: 50px;
       }
-      &__list{
-         flex-wrap: wrap;
+      &__list {
          margin-left: -30px;
       }
-      &__item{
+      &__item {
          position: relative;
          margin-left: 30px;
       }
-      &__description{
+      &__description {
          display: flex;
          position: absolute;
          left: 0;
@@ -34,4 +38,5 @@
          letter-spacing: 0.03em;
          text-transform: uppercase;
       }
+   }
 }

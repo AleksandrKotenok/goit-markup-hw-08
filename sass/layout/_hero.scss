@@ -1,27 +1,57 @@
-.hero{
-   max-width: 1600px;
-   background-color: #C4C4C4;
+//mob
+.hero {
+   max-width: 767px;
+   background-color: #c4c4c4;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   padding-top: 200px;
-   padding-bottom: 200px;
-   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-      url("../images/hero-bg.jpg");
+   padding-top: 118px;
+   padding-bottom: 118px;
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_mob.jpg");
    background-size: cover;
+   //mob 2x
+   @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_mob@2x.jpg");
+   }
+   //tab
+   @media screen and (min-width: 768px) {
+      max-width: 1199px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_tab.jpg");
+   }
+   //tab 2x
+   @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_tab@2x.jpg");
+   }
+   //dt
+   @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_dt.jpg");
+   }
+   //dt 2x
+   @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero_dt@2x.jpg");
+   }
 }
-.hero__titel{
-   width: 696px;
-   height: 120px;
+// mob + tab
+.hero__titel {
+   max-width: 360px;
+   max-height: 84px;
    font-style: normal;
    font-weight: 900;
-   font-size: 44px;
-   line-height: 1.36;
+   font-size: 26px;
+   line-height: 1.62;
    text-align: center;
-   margin: 0 auto 30px auto ;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   color: #FFFFFF;
+   color: #ffffff;
+   margin: 0 auto 30px auto;
+   // dt
+   @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      max-height: 120px;
+      font-size: 44px;
+      line-height: 1.36;
+   }
 }

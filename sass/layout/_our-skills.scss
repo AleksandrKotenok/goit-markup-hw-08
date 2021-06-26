@@ -1,25 +1,52 @@
-.skill{
-   &__list{
-      margin-left: -30px;   
+.skill {
+   &__list {
+      align-items: center;
+      @media screen and (max-width: 767px) {
+         display: list-item;
+      }
+      @media screen and (min-width: 768px) {
+         display: list-item;
+         display: flex;
+         flex-wrap: wrap;
+         margin-left: -30px;
+         margin-bottom: -30px;
+      }
+      @media screen and (min-width: 1200px) {
+         display: flex;
+      }
    }
-   &__item{
-      width: 270px;
-      margin-left: 30px;
+   &__item {
+      @media screen and (max-width: 767px) {
+         max-width: 450px;
+         &:not(:last-child) {
+            margin-bottom: 30px;
+         }
+      }
+      @media screen and (min-width: 768px) {
+         max-width: 354px;
+         margin-left: 30px;
+         margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+         max-width: 270px;
+         // margin-left: 30px;
+      }
    }
-   &__icon-box{
+
+   &__icon-box {
       width: 100%;
       padding: 25px 0;
-      background-color: #F5F4FA;
+      background-color: #f5f4fa;
       margin-bottom: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
    }
-   &__icons{
+   &__icons {
       width: 70px;
       height: 70px;
    }
-   &__name{
+   &__name {
       font-weight: bold;
       font-size: 14px;
       line-height: 1.14;
@@ -27,12 +54,18 @@
       text-transform: uppercase;
       color: #212121;
       margin-bottom: 10px;
+      @media screen and (max-width: 767px) {
+         text-align: center;
+      }
    }
-   &__description{
+   &__description {
       font-weight: normal;
       font-size: 14px;
-      line-height: 24px;
+      line-height: 1.71;
       letter-spacing: 0.03em;
       color: #757575;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         height: 75px;
+      }
    }
 }

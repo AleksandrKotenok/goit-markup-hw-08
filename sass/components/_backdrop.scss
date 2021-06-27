@@ -1,4 +1,4 @@
-.backdrop{
+.backdrop {
    position: fixed;
    top: 0;
    left: 0;
@@ -6,8 +6,12 @@
    height: 100vh;
    background-color: rgba(0, 0, 0, 0.2);
    z-index: 10;
+   @media screen and (max-width: 1199px) {
+   }
+   @media screen and (min-width: 1200px) {
+   }
 }
-.is-hidden{
+.is-hidden {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;

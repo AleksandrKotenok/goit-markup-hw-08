@@ -1,26 +1,28 @@
-
-.social-link-footer{
+.social-link-footer {
    width: 44px;
    height: 44px;
    border-radius: 50%;
-   background-color:rgba(255, 255, 255, 0.1);
+   background-color: rgba(255, 255, 255, 0.1);
    display: flex;
    align-items: center;
    justify-content: center;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-      &:hover,
-      &:focus{
-         background-color: #2196F3;
-      }
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      background-color: #2196f3;
+   }
 }
-.social-list-footer{
+.social-list-footer {
    display: flex;
+   @media screen and (max-width: 1199px) {
+      justify-content: center;
+   }
 }
-.social-list-footer-icon{
-   width: 20px;;
+.social-list-footer-icon {
+   width: 20px;
    height: 20px;
    fill: #ffffff;
 }
-.social-item-footer:not(:last-child){
+.social-item-footer:not(:last-child) {
    margin-right: 10px;
 }
